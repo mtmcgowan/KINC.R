@@ -378,7 +378,9 @@ findLinkedCommunities = function(net, file_prefix, module_prefix = 'M', sim_col 
     # If the meta analysis was selected.
     if (meta) {
       r = mergeCommunities(lc)
-    }
+    } else {
+      r = lc
+      }
 
     lcs[[gi]] = r
 
